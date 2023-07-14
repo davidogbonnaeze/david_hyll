@@ -1,7 +1,12 @@
+import 'package:david_hyll/core/services/http_service.dart';
+import 'package:david_hyll/core/utils/dependency_injection.dart';
 import 'package:david_hyll/core/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  configureDependencyInjection();
+  HttpService httpService = getIt<HttpService>();
+  httpService.init();
   runApp(const MyApp());
 }
 
@@ -18,6 +23,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routerConfig: goRouter,
+
     );
   }
 }

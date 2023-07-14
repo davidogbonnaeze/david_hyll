@@ -9,7 +9,7 @@ part of 'supply_info.dart';
 SupplyInfo _$SupplyInfoFromJson(Map<String, dynamic> json) => SupplyInfo(
       supplierName: json['supplier_name'],
       priceTitle: json['price_title'] as String,
-      priceSubtitle: json['price_subtitle'] as String,
+      priceSubtitle: json['price_subtitle'],
       buttonType: json['button_type'] as String,
       link: json['link'],
     );

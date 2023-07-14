@@ -8,7 +8,7 @@ class SupplyInfo {
   @JsonKey(name:"price_title")
   final String priceTitle;
   @JsonKey(name:"price_subtitle")
-  final String priceSubtitle;
+  final dynamic priceSubtitle;
   @JsonKey(name:"button_type")
   final String buttonType;
   @JsonKey(name:"link")
